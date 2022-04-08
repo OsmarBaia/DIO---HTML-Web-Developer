@@ -139,6 +139,7 @@ body {
     float: right;
     position: fixed;
     right: 0;
+    background-color: var(--Black);
 }
 
 .navMenuItem {
@@ -146,6 +147,12 @@ body {
     list-style-type: none;
     color: var(--White)
 }
+
+.vertical {
+    border-left: 2px solid var(--White);
+    height: 275px;
+    position:absolute;
+ }
 
 /*  Configs do painel de informações */
 #infoCardSection {
@@ -183,6 +190,7 @@ body {
 }
 
 .articleText {
+    text-align: left;
     text-indent: 15px;
     font-size: medium;
 }
@@ -204,17 +212,15 @@ body {
     margin: 10px;
     width: 64px;
     height: 64px;
-    border: 1px solid blue;
 }
 
 /* protifolio */
 #contentGalery{
-    width: 75%;
+    width: 60%;
     height: auto;
     margin-bottom: 15px;
     margin-left: 20%;
     align-items: center;
-    border: 1px solid purple;
 }
 .articlePortifolio{
     width: 100%;
@@ -222,7 +228,8 @@ body {
     padding: 10px;
     padding-bottom: 15px;
     border-radius: 15px;
-    background-color: var(--Gray)
+    background-color: var(--Gray);
+    text-align: center;
 }
 
 .portifolioPic{
@@ -230,5 +237,4 @@ body {
     margin: 10px;
     width: 256px;
     height: 256px;
-    border: 1px solid blue;
 }
