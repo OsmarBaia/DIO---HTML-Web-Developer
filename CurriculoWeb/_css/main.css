@@ -1,18 +1,25 @@
+/* Configs da pagina */
+:root{
+    --Black: #1C1C1F;
+    --Gray: #2E2D35;
+    --White: #C9C9C9;
+    --LineColor: slateblue;
+}
 *{
     margin: 0;
     margin-bottom: 15px; 
     box-sizing: border-box;
 }
+/* Configs do escopo */
 body{
     width: auto;    /* 100% */
     height: auto;   /* 100% */
-    background-color: #1C1C1F;
-    color: #C9C9C9;
-    border: 1px solid red;
+    background-color: var(--Black);
+    color: var(--White);
 }
 
-/* Barra superior */
-#barraSuperior{
+/* Configs da dock superior */
+#upperDock{
     width: auto;
     height: 50px;
 
@@ -20,135 +27,164 @@ body{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
-    background-color: #C9C9C9;
-    color: #1C1C1F;
+    background-color: var(--Gray);
+    color: var(--White);  
 }
-
-.barraSupElemento
+/* Configs das caixa na dock superior */
+.dockElement
 {
     float: left;
+    height: 100%;
 }
 
-#secDirBarraSup{
-    width: 50%;
-    height: 100%;
+#dockRightSection{
+    width: 30%;
 }
-#secEsqBarraSup{
-    width: 50%;
-    height: 100%;
+#dockLeftSection{
+    width: 30%;
 }
-#icone{
-    width: 20%;
-    height: 100%;
-    text-align: right;
-    position: relative;
+#dockMidSection{
+    width: 40%;
+}
+/* Configs do Icone na dock superior */
+#dockIconSection{
+    margin-left: 30%;
     transform: translate(0, -10%);
 }
 
-#iconePic{
+#dockIcon{
     width: 64px;
     height: 64px;
-    border-radius: 200px;
 }
-#info{
-    width: 80%;
-    height: 100%;
+/* Configs do Nome na dock superior */
+#dockNameSection{
+    width: 50%;
+
 }
-#infoNome{
-    width: 35%;
-    height: 100%;
+#dockName{
+    width: 100%;
+    font-size: x-large;
+    text-align: left;
+    padding-top: 10px;
+    
+}
+/* Configs das Ocupações na dock superior */
+#dockOcupationSection{
+    width: 100%;
+    font-size: medium;
+    font-style: italic;
     display: flex;
     justify-content: left;
     align-items: center;
     padding-top: 10px;
-    
 }
-#nome{
-    font-size: x-large;
-    text-align: left;
-
-}
-#infoDescricao{
-    width: 65%;
-    height: 100%;
-    float: left;
-    font-size: medium;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-}
-#topMenu{
+/* Configs do menu na dock superior */
+#dockMenuSection{
     width: auto;
     height: auto;
-    display: flex;
+    display: inline-block;
     justify-content: right;
-    align-items: center;
 }
 
-#topMenuList{
-    list-style-type: none;
+#dockMenu{
+   
     padding-top: 10px;
     margin-right: 10px;
 }
 
-.topMenuItemList
+.dockMenuItem
 {
+    font-size: large;
+    list-style-type: none;
     margin: 10px;
     display: inline;
-    font-size: large;
-    color: #1C1C1F;
 }
 
-/* Conteudo */
-#mainSection{
+/*  Configs da área de Conteudo */
+#contentArea{
     width: 100%;
-    height: calc(100% - 100px);
-    border: 1px solid blue;
+    margin-bottom: 15px;
     align-items: center;
 }
+/*  Configs dos menus latereias */
+.sideContainer{
+    width: 15%;
+    height: auto;
+    
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    
+    background-color: var(--Gray);    
+    border-radius: 15px;
+    
+    padding: 10px;
+}
+/*  Configs do sub-menu de navegação */
+#NavMenuSection{
+    float: right; 
+    position: fixed;
+    right: 0;
+}
 
-.mainContainers{
+.navMenuItem{
+    font-size: large;
+    list-style-type: none;
+    color: var(--White)
+}
+/*  Configs do painel de informações */
+#infoCardSection{
+    float: left;
+}
+/*  Configs da foto no painel de informações */
+#cardPhoto{
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 200px;
+}
+/*  Configs do texto no painel de informações */
+#personalInfo
+{
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/*  Configs do painel de informações */
+.articleContainer{
     width: 60%;
     height: 100%;
-    border: 1px solid blue;
     margin-left: 20%;
     margin-right: 20%;
     padding: 10px;
     padding-bottom: 15px;
     border-radius: 15px;
-    background-color: #32313D;
+    background-color: var(--Gray);
 }
 
-.subTitulo{
-    font-size: larger;
+.articleTitle{
+    font-size: x-large;
     margin-bottom: 5px;
 }
 
-#cartãoPessoal{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: auto;
-    background-color: #32313D;
-}
-
-.sideContainer{
-    width: 100%;
-    margin: 0px;
-    margin-bottom: 15px;
-}
-#fotoCartão{
-    height: auto;
-    border-radius: 200px;
-    border: 1px solid red;
-}
-#textoPessoal
-{
-    border: 1px solid red;
-    border-radius: 15px;
-    padding: 10px;
+.articleText{
+    text-indent: 15px;
+    font-size: medium;
 }
 
 /* Rodapé */
+#contact{
+    width: 100%;
+    text-align: center;
+    background-color: var(--Black);
+}
+
+#midiaContact{
+    display: inline-block;
+}
+
+.midiaIcon{
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    border: 1px solid blue;
+}

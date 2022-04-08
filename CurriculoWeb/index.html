@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Osmar Neto | Web Developer </title>
     <link rel="stylesheet" href="./_css/main.css">
     <script src="./_js/app.js">
         
@@ -12,121 +12,170 @@
 </head>
 <body>
     <header>
-        <section id="barraSuperior">
-            <section class="barraSupElemento" id="secEsqBarraSup">
-                <section class="barraSupElemento" id="icone">
+        <!-- Barra Superior -->
+        <section id="upperDock">
+            
+            <!-- caixa lado esquerdo (Icone e Nome) -->
+            <section class="dockElement" id="dockLeftSection">
+                
+                <!-- Icone -->
+                <section class ="dockElement" id="dockIconSection">
                     <figure>
-                        <img id="iconePic" src="./_imagens/web_compute_android.png" alt="icone">   
+                        <img id="dockIcon" src="./_imagens/web_compute_android.png" alt="Icon">   
                     </figure>
                 </section>
-                <section class="barraSupElemento"  id="info">
-                    <section class="barraSupElemento" id="infoNome">                        
-                        <h1 id="nome">Osmar Orsact Neto </h1>
-                    </section>
-                    <section class="barraSupElemento" id="infoDescricao">
-                        <p>
-                            Desenvolvedor Web e Mobile | Desenvolvedor de Jogos
-                        </p>
-                        <p>
-
-                        </p>
-                    </section>
+                
+                <!-- Nome -->
+                <section class="dockElement" id="dockNameSection">                    
+                    <h1 id="dockName">Osmar Orsact Neto </h1>
                 </section>
             </section>
-            <section class="barraSupElemento" id="secMidBarraSup">
-
+            
+            <!-- caixa central (Titulos / Ocupações) -->
+            <section class="dockElement" id="dockMidSection">   
+                
+                <!-- Titulos / Ocupações -->
+                <section class="dockElement" id="dockOcupationSection">
+                    <p>
+                        Desenvolvedor Web e Mobile | Desenvolvedor de Jogos
+                    </p>
+                </section>
             </section>
-            <section class="barraSupElemento" id="secDirBarraSup">
-                <nav id="topMenu">
-                    <ul id="topMenuList">
-                        <li class="topMenuItemList"><a href="#about">Sobre Mim</a> </li>
-                        <li class="topMenuItemList"><a href="#projects">Projetos</a></li>
-                        <li class="topMenuItemList"><a href="#contact">Contato</a></li>
+            
+            <!-- caixa lado direito (menu de navegação principal) -->
+            <section class="dockElement" id="dockRightSection">
+                
+                <!-- Menu de Navegação -->
+                <nav id="dockMenuSection">
+                    <ul id="dockMenu">
+                        <li class="dockMenuItem"><a style="color: var(--White);" href="#about">Portefólio</a> </li>
+                        <li class="dockMenuItem"><a style="color: var(--White);" href="#projects">Projetos</a></li>
+                        <li class="dockMenuItem"><a style="color: var(--White);" href="#contact">Contato</a></li>
                     </ul>
                 </nav>
             </section>
         </section>     
     </header>
-
-    <section id="mainSection">
-        <aside style="float: right; width: 20%;">
-            [subMenu]
+    <!-- Área útil (entre Dock e o Rodapé) -->
+    <section id="contentArea">
+        <!-- Sub-Menu de navegação -->
+        <aside class="sideContainer" id="NavMenuSection">
+           <nav>
+               <ul>
+                   <li class="navMenuItem"><a style="color: var(--White);" href="#about">Sobre mim</a></li>
+                   <li class="navMenuItem"><a style="color: var(--White);" href="#experiences">Experiências</a></li>
+                   <li class="navMenuItem"><a style="color: var(--White);" href="#academic">Formação</a></li>
+                   <li class="navMenuItem"><a style="color: var(--White);" href="#courses">Cursos</a></li>
+                   <li class="navMenuItem"><a style="color: var(--White);" href="#certifications">Certificações</a></li>
+                   <li class="navMenuItem"><a style="color: var(--White);" href="#Languages">Idiomas</a></li>
+     
+               </ul>
+           </nav>
         </aside>
-        
-        <section style="float: left; width: 20%;">
-            <section id="cartãoPessoal">
-                <section class="sideContainer" id="fotoCartão">
-                    <figure>
-                        <img src="" alt="fotoPessoal">
-                    </figure>
-                </section>
-                <section class="sideContainer" id="textoPessoal">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sint dignissimos minus asperiores nam iusto unde, eveniet officia natus quo mollitia eligendi eum minima architecto repellendus facilis voluptas. Numquam, eligendi.
-                    </p>
-                </section>
+        <!-- Painel Informações Pessoais -->
+        <section class="sideContainer" id="infoCardSection">
+            <!-- Foto -->
+            <section>
+                <figure>
+                    <img id="cardPhoto" src="./_imagens/personalPhoto.jpg" alt="fotoPessoal" width="128" height="128">
+                </figure>
+            </section>
+            
+            <hr width="100%" color="slateblue">
+            <!-- Infos -->
+            <section id="personalInfo">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sint dignissimos minus asperiores nam iusto unde, eveniet officia natus quo mollitia eligendi eum minima architecto repellendus facilis voluptas. Numquam, eligendi.
+                </p>
             </section>
         </section>
+        <!-- Paineis de informações profissioais -->
+        <!-- Sobre -->
+        <article class="articleContainer" id="about">
+            <h1 class="articleTitle">Sobre</h1>
+            <hr width="100%" color="slateblue">
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. P1</p>
+        </article>
+        <!-- Experiencias -->
+        <article class="articleContainer" id="experiences">
+            <h1 class="articleTitle">Experiencias</h1>
+            <hr width="100%" color="slateblue">
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+        </article>
+        <!-- Formação -->
+        <article class="articleContainer" id="academic">
+            <h1 class="articleTitle">Formação</h1>
+            <hr width="100%" color="slateblue">
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+        </article>
+        <!-- Cursos -->
+        <article class="articleContainer" id="courses">
+            <h1 class="articleTitle">Cursos</h1>
+            <hr width="100%" color="slateblue">
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+        
+        </article>
+        <!-- Certificações -->
+        <article class="articleContainer" id="certifications">
+            <h1 class="articleTitle">Certificação</h1>
+            <hr width="100%" color="slateblue">
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
 
-        <section class="mainContainers" id="about">
-            <h1 class="subTitulo">Sobre</h1>
-            <hr width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. P1</p>
-        </section>
-           
-        <section class="mainContainers" id="projects">
-            <h1 class="subTitulo">Experiencias</h1>
-            <hr width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
-        </section>
-
-        <section class="mainContainers" id="">
-            <h1 class="subTitulo">Formação</h1>
-            <hr width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
-        </section>
-
-        <section class="mainContainers" id="">
-            <h1 class="subTitulo">Cursos</h1>
-            <hr width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
-        </section>
-
-        <section class="mainContainers" id="">
-            <h1 class="subTitulo">Certificação</h1>
-            <hr width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
-        </section>
-
-        <section class="mainContainers" id="">
-            <h1 class="subTitulo">Idiomas</h1>
-            <hr width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
-        </section>
+        </article>
+        <!-- Linguagens -->
+        <article class="articleContainer" id="Languages">
+            <h1 class="articleTitle">Idiomas</h1>
+            <hr width="100%" color="slateblue">
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda explicabo porro veritatis quisquam expedita in eveniet voluptatem magnam labore! Rerum animi, quis asperiores nostrum laborum nobis voluptate voluptates fugit?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis adipisci impedit velit quia in quas aut tenetur rerum. Explicabo illo ut commodi sint, delectus accusantium id incidunt voluptas unde. p2</p>
+        </article>
     </section>
-
+    <!-- Seção com formas de contato -->
     <footer id="contact">
-        [Rodapé começa aqui]
-        <section id="contatos">
-           <section style="border: 1px solid green;">
-            [Meios de contato]
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eligendi hic illo maxime veritatis nemo quasi! Quam in quae error culpa natus nihil, accusamus harum expedita soluta adipisci odio eius?</p>
-           </section>
+        <h4>Contato</h4>
+        <section id="midiaContact">
+            <!--LinkedIn -->
+            <figure class="midiaIcon">
+                <a href="https://www.linkedin.com"><img src="" alt="LinkedIn-Icon" width="64" height="64"></a>
+            </figure >
+            <!--Email -->
+            <figure class="midiaIcon">
+                <a href="EmailTo:abscd@asxb.com"><img src="" alt="Email-Icon" width="64" height="64"></a>
+            </figure>
+            <!--Tel -->
+            <figure class="midiaIcon">
+                <a href="Tel:123456789"><img src="" alt="WhatsApp-Icon" width="64" height="64"></a>
+            </figure>
+            <!--Github -->
+            <figure class="midiaIcon">
+                <a href="https://www.github.com"><img src="" alt="GitHub-Icon" width="64" height="64"></a>
+            </figure>
         </section>
-        <section id="cretitos">
-            <section style="border: 1px solid green;">
-                [creditos]
-                <a href='https://www.freepik.com/vectors/gradient-infographic'>Gradient infographic vector created by pikisuperstar - www.freepik.com</a>  
-            </section>
+        <section>
+            <h5>Desenvolvido por: Osmar Neto | Incentivado por: Orbi Game BootCamp | Patrocinado por: Digital Innovation One </h5>
         </section>
-        
     </footer>
-<noscript>[Aviso sobre falta de javascript]</noscript>
+    <!-- feedback caso o navg nao tenha javascript -->
+    <noscript>
+    Esse site precisa de javascript para funcionar corretamente, por favor abra-o em outro navegador
+    </noscript>
 </body>
 </html>
