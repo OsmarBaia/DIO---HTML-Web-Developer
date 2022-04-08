@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    margin-bottom: 15px; 
+    box-sizing: border-box;
+}
+body{
+    width: auto;    /* 100% */
+    height: auto;   /* 100% */
+    background-color: #1C1C1F;
+    color: #C9C9C9;
+    border: 1px solid red;
+}
+
+/* Barra superior */
+#barraSuperior{
+    width: auto;
+    height: 50px;
+
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    background-color: #C9C9C9;
+    color: #1C1C1F;
+}
+
+.barraSupElemento
+{
+    float: left;
+}
+
+#secDirBarraSup{
+    width: 50%;
+    height: 100%;
+}
+#secEsqBarraSup{
+    width: 50%;
+    height: 100%;
+}
+#icone{
+    width: 20%;
+    height: 100%;
+    text-align: right;
+    position: relative;
+    transform: translate(0, -10%);
+}
+
+#iconePic{
+    width: 64px;
+    height: 64px;
+    border-radius: 200px;
+}
+#info{
+    width: 80%;
+    height: 100%;
+}
+#infoNome{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+#nome{
+    font-size: x-large;
+    text-align: left;
+
+}
+#infoDescricao{
+    width: 65%;
+    height: 100%;
+    float: left;
+    font-size: medium;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+#topMenu{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#topMenuList{
+    list-style-type: none;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.topMenuItemList
+{
+    margin: 10px;
+    display: inline;
+    font-size: large;
+    color: #1C1C1F;
+}
+
+/* Conteudo */
+#mainSection{
+    width: 100%;
+    height: calc(100% - 100px);
+    border: 1px solid blue;
+    align-items: center;
+}
+
+.mainContainers{
+    width: 60%;
+    height: 100%;
+    border: 1px solid blue;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    background-color: #32313D;
+}
+
+.subTitulo{
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+#cartãoPessoal{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    background-color: #32313D;
+}
+
+.sideContainer{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+#fotoCartão{
+    height: auto;
+    border-radius: 200px;
+    border: 1px solid red;
+}
+#textoPessoal
+{
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Rodapé */
