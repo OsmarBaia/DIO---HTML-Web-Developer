@@ -1,8 +1,7 @@
-<div>
+
 <img align="left" src="./htmlBootCamp-Icon.png" alt="htmlBootCamp-icon" width="60"/>
 <h1> HTML Web Developer Bootcamp </h1>
 <p>Projetos práticos executados no bootcamp HTML Web Developer da dio</p>
-</div>
 <h2>🖥Tecnologias</h2>
 <ul>
 <li>HTML & CSS3</li>
