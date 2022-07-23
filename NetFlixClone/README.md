@@ -14,7 +14,7 @@ Home page da netflix reproduzida utilizando apenas html, css e owl carrosel.
 <img src="./img/netflixHome_LandScape.PNG">
 </div>
 
-## 📱 Mobile
+## 📱 Portrait
 
 <div>
 <img src="./img/netflixHome_Portrait.PNG"  width="320">
