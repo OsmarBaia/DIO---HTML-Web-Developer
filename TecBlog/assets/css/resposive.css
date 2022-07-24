@@ -3,12 +3,12 @@
     height: 80px;
     flex-direction: column;
   }
+
   .menu {
     margin: 10px;
   }
 
   .postsArea {
-    margin-top: 95px;
-    width: 90%;
+    margin-top: 35px;
   }
 }
