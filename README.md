@@ -10,6 +10,7 @@
 
 <h2>📐Projetos</h2>
 <ul>
+<li><a href="./TecBlog">TecBlog</a></li>
 <li><a href="./NetFlixClone">Home Netflix</a></li>
 <li><a href="https://github.com/OsmarBaia/SantanderFullStackBootCamp/tree/main/Instagram">Login Instagram</a></li>
 <li><a href="./SnakeGame">Snake Game</a>
